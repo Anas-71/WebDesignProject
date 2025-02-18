@@ -214,9 +214,8 @@ body {
 .courses#fourth .course-container * {
     flex: 1;
 }
-.teacher-section{
+.courses#fourth .teacher-section{
     margin: 0px;
-    width: 400px;
     height: 400px;
     padding: 30px;
     padding-top: 120px;
