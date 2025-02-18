@@ -1,0 +1,366 @@
+/* Define CSS Variables */
+:root {
+    /* CSS HEX */
+    --tomato: #F5D061;
+    --tomato-hover: #e6ad33;
+    --raisin-black: #1e1e24ff;
+    --platinum: #e2e3e1ff;
+    --baby-powder: #fdfffcff;
+    --indigo-dye: #1c4261ff;
+    --li-hover: #f3e9768f;
+
+    --primary-bg: #ecedeb;
+    --primary-bg-hover: #c9cac8;
+    --section-bg: #caccc8;
+    --navbar-bg: #2A363B;
+    --text-color: #222222;
+    --card-bg: #F8F6F6;
+    --card-font: #2A363B;
+    --border-color: #9a9a9a;
+    --accent-color: #F5D061; /* New Accent Color */
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Marhey", serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    padding: 5px;
+    padding-bottom: 0px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--navbar-bg);
+    padding: 15px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--card-bg);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 5px;
+    padding: 15px;
+    border-radius: 8%;
+    transition-duration: 0.2s;
+}
+
+.nav-links li:hover{
+    background-color: var(--li-hover);
+    transform: translate(0px, -5px);
+}
+
+.nav-links a {
+    color: var(--card-bg);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-top: 100px;   /*look at me im stupid---------------------------------------------------------------------------------*/
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: var(--navbar-bg);
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.hero #pencil{
+    width: 180px;
+    position: absolute;
+    left: 255px;
+    transition-duration: 0.15s;
+}
+
+.hero-stuff{
+    display: inline;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+}
+
+.hero-stuff img{
+    width: 600px;
+    padding-top: 10px;
+    transition-duration: 0.1s;
+}
+
+.hero-stuff img:hover{
+    transform: rotate(10deg);
+}
+
+.hero-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: var(--card-bg);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--card-font);
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition-duration: 0.15s;
+}
+
+.btn-primary:hover{
+    background-color: var(--tomato-hover);
+    transform: scale(1.018);
+}
+
+.btn-primary:hover ~ #pencil{
+    transform: rotate(-10deg);
+    transform-origin: 50% 80%;
+}
+
+/* Course Listing */
+.courses {
+    padding: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: var(--section-bg);
+}
+
+.courses h2 {
+    text-align: right;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+.courses h1{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: right;
+    font-size: 18px;
+    
+}
+
+.course-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.course-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+    padding-bottom: 60px;       /*extra padding for button since it is position absolute*/
+    width: 280px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.course-card p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.course-card:hover{
+    transform: scale(1.05);
+}
+
+.course-card h3 {
+    color: var(--navbar-bg);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.course-card p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.card-image{
+    background: var(--platinum);
+    padding: 0px;
+    border-radius: 10px;
+    width: 280px;
+    height: 157px;
+}
+
+.teacher-section{
+    margin: 0px;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    padding-top: 120px;
+    display: inline-block;
+    align-items: center;
+    justify-content: right;
+}
+
+.teacher-section .btn-box{
+    display: flex;
+    justify-content: right;
+}
+
+.teacher-section#first{
+    height: 200px;
+    padding-top: 50px;
+}
+
+.teacher-section2{
+    width: 900px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.courses#fourth .teacher-section2{
+    width: 900px;
+    height: 400px;
+    background-image: url("/Images/pencil_guy.png");
+    background-size: 400px;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+}
+
+
+
+.teacher-section h1{
+    margin-left: 0px;
+    margin-bottom: 0px;    
+}
+
+.icon{
+    width: 180px;
+    height: 180px;
+    transition-duration: 0.2s;
+    background-size: contain;
+}
+
+.icon#face{
+    background-image: url("/Images/facebook_icon.png");
+}
+
+.icon#you{
+    background-image: url("/Images/youtube_icon.png");
+    background-size: 240px;
+    background-position: center;
+}
+
+.icon#x{
+    background-image: url("/Images/Twitter_icon.png");
+    background-size: 210px;
+    background-position: center;
+}
+
+.icon#insta{
+    background-image: url("/Images/Instagram_icon.png");
+}
+
+.icon:hover{
+    transform: rotate(8deg);
+}
+
+.icon#insta:hover{
+    transform: rotate(-8deg);
+
+}
+
+.icon#x:hover{
+    transform: rotate(16deg);
+}
+
+.icon#you:hover{
+    transform: rotate(-10deg);
+}
+
+
+
+
+
+
+
+.btn-container{
+    padding: 0px;
+    height: 50px;
+    width: 280px ;
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--card-font);
+    padding: 8px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-style: solid;
+    border-color: var(--text-color);
+    border-width: 2px;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition-duration: 0.2s;
+}
+
+.btn-secondary:hover{
+    background-color: var(--tomato-hover);
+    transform: scale(1.03);
+}
+
+.courses#second{
+    background-color: var(--baby-powder);
+}
+
+.courses#fourth{
+    background-color: var(--baby-powder);
+}
+
+
