@@ -115,7 +115,8 @@ header nav a {
 }
 
 .course-card{
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
+    transition: all 0.3s;
 }
 
 .course-card .progress-bar{
