@@ -55,7 +55,7 @@ body {
 .hero #pencil{
     width: 180px;
     position: absolute;
-    left: 255px;
+    left: 16.8vw;
     transition-duration: 0.15s;
 }
 
@@ -119,7 +119,7 @@ body {
 }
 
 .courses h2 {
-    text-align: left;
+    text-align: right;
     margin-bottom: 8px;
     font-size: 30px;
 }
@@ -127,7 +127,7 @@ body {
 .courses h1{
     margin-bottom: 20px;
     margin-left: 20px;
-    text-align: left;
+    text-align: right;
     font-size: 18px;
     
 }
@@ -242,6 +242,14 @@ body {
     gap: 10px;
 }
 
+.teacher-section h2{
+    text-align: left;
+}
+
+.teacher-section h1{
+    text-align: left;
+}
+
 .courses#fourth .teacher-section2{
     width: 100%;
     height: 400px;
@@ -300,6 +308,47 @@ body {
 
 .icon#you:hover{
     transform: rotate(-10deg);
+}
+
+.card-image#game{
+    background-image: url("https://1.bp.blogspot.com/-5GnR-Es5eJA/YKAaTS-q9uI/AAAAAAAAHvE/_F7IML_OQVYl8IEBbjIsUA36yQ1niKRGgCNcBGAsYHQ/s750/photo_2021-05-16_00-29-57.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card-image#web{
+    background-image: url("https://www.classcentral.com/report/wp-content/uploads/2022/04/BCG-Web-Development-NEW-Banner.png");
+    background-size: cover;
+    background-position: center;
+}
+.card-image#webz{
+    background-image: url("https://th.bing.com/th/id/OIP.TplDOYzGdAsvnBW2Ok_CHwHaEK?rs=1&pid=ImgDetMain");
+    background-size: cover;
+    background-position: center;
+}
+.card-image#database{
+    background-image: url("https://th.bing.com/th/id/R.31752c5c86507f1a39b00a6a4f31647c?rik=h0xlQnCPSvr0ag&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-position: center;
+}
+.card-image#oop{
+    background-image: url("https://technocation.pk/wp-content/uploads/2022/10/oop-course.png");
+    background-size: cover;
+    background-position: center;
+}
+.card-image#data{
+    background-image: url("https://files.selar.co/product-images/2024/products/rose-digitalz1/data-analysis-course-selar.co-669b271dd8cd7.png");
+    background-size: cover;
+    background-position: center;
+}
+.card-image#anal{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1649388827i/60771307.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card-image#ai{
+    background-image: url("https://www.classcentral.com/report/wp-content/uploads/2022/04/Artificial-Intelligence-Featured-Image.png");
+    background-size: cover;
+    background-position: center;
 }
 
 /* Responsive Design */

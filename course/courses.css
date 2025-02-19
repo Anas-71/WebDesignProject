@@ -62,6 +62,10 @@ body {
     position: relative;
 }
 
+.search-container input:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .search-input {
     position: relative;
     flex: 1;    
@@ -97,6 +101,12 @@ body {
     padding: 8px 15px;
     border-radius: 20px;
     cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+.pill:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.025);
 }
 
 /* Course Grid */
@@ -128,6 +138,54 @@ body {
     background: var(--placeholder-bg);
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+.course-image#img0{
+    background-image: url("https://www.classcentral.com/report/wp-content/uploads/2022/04/BCG-Web-Development-NEW-Banner.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.course-image#img1{
+    background-image: url("https://th.bing.com/th/id/OIP.TplDOYzGdAsvnBW2Ok_CHwHaEK?rs=1&pid=ImgDetMain");
+    background-size: cover;
+    background-position: center;
+}
+
+.course-image#img2{
+    background-image: url("https://www.classcentral.com/report/wp-content/uploads/2023/09/bcg_python_banner.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.course-image#img3{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKxfImiRKkxPH31TS-n7dToiucRXRmNL77Xw&s");
+    background-size: cover;
+    background-position: center;
+}
+
+.course-image#img4{
+    background-image: url("https://cdn.shopaccino.com/igmguru/products/flutter-igmguru_1527424732_xl.jpg?v=531");
+    background-size: cover;
+    background-position: center;
+}
+
+.course-image#img5{
+    background-image: url("https://th.bing.com/th/id/R.31752c5c86507f1a39b00a6a4f31647c?rik=h0xlQnCPSvr0ag&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-position: center;
+}
+
+.course-image#img6{
+    background-image: url("https://cdn.shopaccino.com/igmguru/products/cyber-security-course-igmguru_1273766112_l.jpg?v=531");
+    background-size: cover;
+    background-position: center;
+}
+
+.course-image#img7{
+    background-image: url("https://www.classcentral.com/report/wp-content/uploads/2022/04/Artificial-Intelligence-Featured-Image.png");
+    background-size: cover;
+    background-position: center;
 }
 
 /* Rating */
